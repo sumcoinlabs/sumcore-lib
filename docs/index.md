@@ -2,7 +2,7 @@
 
 ## Principles
 
-Sumcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Sumcoin network allows for highly resilient sumcoin infrastructure, and the developer community needs reliable, open-source tools to implement sumcoin apps and services. Litecore provides a reliable API for JavaScript apps that need to interface with Sumcoin.
+Sumcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Sumcoin network allows for highly resilient sumcoin infrastructure, and the developer community needs reliable, open-source tools to implement sumcoin apps and services. Sumcore provides a reliable API for JavaScript apps that need to interface with Sumcoin.
 
 To get started, just `npm install sumcore` or `bower install sumcore`.
 

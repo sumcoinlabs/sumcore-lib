@@ -1,4 +1,4 @@
-Litecore Library
+Sumcore Library
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/sumcore-lib.svg?style=flat-square)](https://www.npmjs.org/package/sumcore-lib)
@@ -45,7 +45,7 @@ To get community assistance and ask for help with implementation questions, plea
 
 ## Security
 
-We're using Litecore in production, as are [many others](http://sumcore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
+We're using Sumcore in production, as are [many others](http://sumcore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
 
 If you find a security issue, please email security@bitpay.com.
 

@@ -1,4 +1,4 @@
-Contributing to Litecore
+Contributing to Sumcore
 =======
 
 We're working hard to make *sumcore* the most powerful JavaScript library for working with sumcoin. Our goal is to have *sumcore* be a library that can be used by anyone interested in sumcoin, and to level expertise differences with great design and documentation.
@@ -101,7 +101,7 @@ These should have a matching static method that can be used for instantiation:
 * `fromString` - Should be able to instantiate with output from `toString`
 * `fromBuffer` - Should likewise be able to instantiate from output from `toBuffer`
 
-`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of Litecore methods. For example, calling `JSON.stringify` on a Litecore object will behave as expected and call `transaction.toJSON()` and then stringify it:
+`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of Sumcore methods. For example, calling `JSON.stringify` on a Sumcore object will behave as expected and call `transaction.toJSON()` and then stringify it:
 
 ```javascript
 var transactionString = JSON.stringify(transaction);

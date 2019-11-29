@@ -1,4 +1,4 @@
-# Litecore examples
+# Sumcore examples
 
 ## Generate a random address
 ```javascript
