@@ -1,70 +1,70 @@
 'use strict';
 
-var litecore = module.exports;
+var sumcore = module.exports;
 
 // module information
-litecore.version = 'v' + require('./package.json').version;
-litecore.versionGuard = function(version) {
+sumcore.version = 'v' + require('./package.json').version;
+sumcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of litecore-lib found. ' +
-      'Please make sure to require litecore-lib and check that submodules do' +
-      ' not also include their own litecore-lib dependency.';
+    var message = 'More than one instance of sumcore-lib found. ' +
+      'Please make sure to require sumcore-lib and check that submodules do' +
+      ' not also include their own sumcore-lib dependency.';
     throw new Error(message);
   }
 };
-litecore.versionGuard(global._litecore);
-global._litecore = litecore.version;
+sumcore.versionGuard(global._litecore);
+global._litecore = sumcore.version;
 
 // crypto
-litecore.crypto = {};
-litecore.crypto.BN = require('./lib/crypto/bn');
-litecore.crypto.ECDSA = require('./lib/crypto/ecdsa');
-litecore.crypto.Hash = require('./lib/crypto/hash');
-litecore.crypto.Random = require('./lib/crypto/random');
-litecore.crypto.Point = require('./lib/crypto/point');
-litecore.crypto.Signature = require('./lib/crypto/signature');
+sumcore.crypto = {};
+sumcore.crypto.BN = require('./lib/crypto/bn');
+sumcore.crypto.ECDSA = require('./lib/crypto/ecdsa');
+sumcore.crypto.Hash = require('./lib/crypto/hash');
+sumcore.crypto.Random = require('./lib/crypto/random');
+sumcore.crypto.Point = require('./lib/crypto/point');
+sumcore.crypto.Signature = require('./lib/crypto/signature');
 
 // encoding
-litecore.encoding = {};
-litecore.encoding.Base58 = require('./lib/encoding/base58');
-litecore.encoding.Base58Check = require('./lib/encoding/base58check');
-litecore.encoding.BufferReader = require('./lib/encoding/bufferreader');
-litecore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
-litecore.encoding.Varint = require('./lib/encoding/varint');
+sumcore.encoding = {};
+sumcore.encoding.Base58 = require('./lib/encoding/base58');
+sumcore.encoding.Base58Check = require('./lib/encoding/base58check');
+sumcore.encoding.BufferReader = require('./lib/encoding/bufferreader');
+sumcore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
+sumcore.encoding.Varint = require('./lib/encoding/varint');
 
 // utilities
-litecore.util = {};
-litecore.util.buffer = require('./lib/util/buffer');
-litecore.util.js = require('./lib/util/js');
-litecore.util.preconditions = require('./lib/util/preconditions');
+sumcore.util = {};
+sumcore.util.buffer = require('./lib/util/buffer');
+sumcore.util.js = require('./lib/util/js');
+sumcore.util.preconditions = require('./lib/util/preconditions');
 
 // errors thrown by the library
-litecore.errors = require('./lib/errors');
+sumcore.errors = require('./lib/errors');
 
 // main bitcoin library
-litecore.Address = require('./lib/address');
-litecore.Block = require('./lib/block');
-litecore.MerkleBlock = require('./lib/block/merkleblock');
-litecore.BlockHeader = require('./lib/block/blockheader');
-litecore.HDPrivateKey = require('./lib/hdprivatekey.js');
-litecore.HDPublicKey = require('./lib/hdpublickey.js');
-litecore.Networks = require('./lib/networks');
-litecore.Opcode = require('./lib/opcode');
-litecore.PrivateKey = require('./lib/privatekey');
-litecore.PublicKey = require('./lib/publickey');
-litecore.Script = require('./lib/script');
-litecore.Transaction = require('./lib/transaction');
-litecore.URI = require('./lib/uri');
-litecore.Unit = require('./lib/unit');
+sumcore.Address = require('./lib/address');
+sumcore.Block = require('./lib/block');
+sumcore.MerkleBlock = require('./lib/block/merkleblock');
+sumcore.BlockHeader = require('./lib/block/blockheader');
+sumcore.HDPrivateKey = require('./lib/hdprivatekey.js');
+sumcore.HDPublicKey = require('./lib/hdpublickey.js');
+sumcore.Networks = require('./lib/networks');
+sumcore.Opcode = require('./lib/opcode');
+sumcore.PrivateKey = require('./lib/privatekey');
+sumcore.PublicKey = require('./lib/publickey');
+sumcore.Script = require('./lib/script');
+sumcore.Transaction = require('./lib/transaction');
+sumcore.URI = require('./lib/uri');
+sumcore.Unit = require('./lib/unit');
 
 // dependencies, subject to change
-litecore.deps = {};
-litecore.deps.bnjs = require('bn.js');
-litecore.deps.bs58 = require('bs58');
-litecore.deps.Buffer = Buffer;
-litecore.deps.elliptic = require('elliptic');
-litecore.deps.scryptsy = require('scryptsy');
-litecore.deps._ = require('lodash');
+sumcore.deps = {};
+sumcore.deps.bnjs = require('bn.js');
+sumcore.deps.bs58 = require('bs58');
+sumcore.deps.Buffer = Buffer;
+sumcore.deps.elliptic = require('elliptic');
+sumcore.deps.scryptsy = require('scryptsy');
+sumcore.deps._ = require('lodash');
 
 // Internal usage, exposed for testing/advanced tweaking
-litecore.Transaction.sighash = require('./lib/transaction/sighash');
+sumcore.Transaction.sighash = require('./lib/transaction/sighash');

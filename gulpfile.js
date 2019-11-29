@@ -1,5 +1,5 @@
 
 
-var litecoreTasks = require('litecore-build');
+var litecoreTasks = require('sumcore-build');
 
 litecoreTasks('lib');

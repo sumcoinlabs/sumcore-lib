@@ -27,7 +27,7 @@ describe('Networks', function() {
     networks.testnet.port.should.equal(19335);
     networks.testnet.dnsSeeds.should.deep.equal([
       'testnet-seed.litecointools.com',
-      'seed-b.litecoin.loshan.co.uk'
+      'seed-b.sumcoin.loshan.co.uk'
     ]);
   });
 

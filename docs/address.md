@@ -62,4 +62,4 @@ var error = Address.getValidationError(input, Networks.testnet);
 }
 ```
 
-The errors are listed in the generated file in the [errors folder](https://github.com/litecoin-project/litecore/tree/master/lib/errors). There's a structure to errors defined in the [spec.js file](https://github.com/litecoin-project/litecore/tree/master/lib/errors/spec.js).
+The errors are listed in the generated file in the [errors folder](https://github.com/sumcoinlabs/sumcore/tree/master/lib/errors). There's a structure to errors defined in the [spec.js file](https://github.com/sumcoinlabs/sumcore/tree/master/lib/errors/spec.js).

@@ -1,18 +1,18 @@
 {
-  "name": "litecore-lib",
-  "main": "./litecore-lib.min.js",
+  "name": "sumcore-lib",
+  "main": "./sumcore-lib.min.js",
   "version": "0.13.19",
-  "homepage": "http://litecore.io",
+  "homepage": "http://sumcore.io",
   "authors": [
     "BitPay, Inc."
   ],
-  "description": "A pure, powerful core for your litecoin project.",
+  "description": "A pure, powerful core for your sumcoin project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "litecoin",
-    "litecore",
+    "sumcoin",
+    "sumcore",
     "btc",
     "satoshi"
   ],

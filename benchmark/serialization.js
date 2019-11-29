@@ -1,7 +1,7 @@
 'use strict';
 
 var benchmark = require('benchmark');
-var litecore = require('..');
+var sumcore = require('..');
 var bitcoinjs = require('bitcoinjs-lib');
 var bcoin = require('bcoin');
 var async = require('async');
@@ -22,13 +22,13 @@ async.series([
     for (var i = 0; i < 100; i++) {
 
       // uint64le
-      var br = new litecore.encoding.BufferWriter();
+      var br = new sumcore.encoding.BufferWriter();
       var num = Math.round(Math.random() * 10000000000000);
-      br.writeUInt64LEBN(new litecore.crypto.BN(num));
+      br.writeUInt64LEBN(new sumcore.crypto.BN(num));
       buffers.push(br.toBuffer());
 
       // hashes
-      var data = litecore.crypto.Hash.sha256sha256(new Buffer(32));
+      var data = sumcore.crypto.Hash.sha256sha256(new Buffer(32));
       hashBuffers.push(data);
     }
 
@@ -40,7 +40,7 @@ async.series([
         c = 0;
       }
       var buf = buffers[c];
-      var br = new litecore.encoding.BufferReader(buf);
+      var br = new sumcore.encoding.BufferReader(buf);
       bn = br.readUInt64LEBN();
       c++;
     }
@@ -52,7 +52,7 @@ async.series([
         c = 0;
       }
       var buf = hashBuffers[c];
-      var br = new litecore.encoding.BufferReader(buf);
+      var br = new sumcore.encoding.BufferReader(buf);
       reversed = br.readReverse();
       c++;
     }
@@ -80,7 +80,7 @@ async.series([
     var block3;
 
     function litecoreTest() {
-      block1 = litecore.Block.fromString(blockData);
+      block1 = sumcore.Block.fromString(blockData);
     }
 
     function bitcoinJSTest() {
@@ -102,7 +102,7 @@ async.series([
     }
 
     var suite = new benchmark.Suite();
-    suite.add('litecore', litecoreTest, {maxTime: maxTime});
+    suite.add('sumcore', litecoreTest, {maxTime: maxTime});
     suite.add('bitcoinjs', bitcoinJSTest, {maxTime: maxTime});
     suite.add('bcoin', bcoinTest, {maxTime: maxTime});
     suite.add('fullnode', fullnodeTest, {maxTime: maxTime});
