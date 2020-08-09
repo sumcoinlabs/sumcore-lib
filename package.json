@@ -1,6 +1,6 @@
 {
   "name": "sumcore-lib",
-  "version": "0.13.21",
+  "version": "0.13.22",
   "description": "A pure and powerful JavaScript Sumcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
