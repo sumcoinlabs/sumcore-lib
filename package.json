@@ -1,6 +1,6 @@
 {
   "name": "sumcore-lib",
-  "version": "0.13.22",
+  "version": "0.13.23",
   "description": "A pure and powerful JavaScript Sumcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -11,58 +11,19 @@
     "build": "gulp"
   },
   "contributors": [
-    {
-      "name": "Charlie Lee",
-      "email": "coblee@sumcoin.org"
-    },
-    {
-      "name": "Daniel Cousens",
-      "email": "bitcoin@dcousens.com"
-    },
-    {
-      "name": "Esteban Ordano",
-      "email": "eordano@gmail.com"
-    },
-    {
-      "name": "Gordon Hall",
-      "email": "gordon@bitpay.com"
-    },
-    {
-      "name": "Jeff Garzik",
-      "email": "jgarzik@bitpay.com"
-    },
-    {
-      "name": "Kyle Drake",
-      "email": "kyle@kyledrake.net"
-    },
-    {
-      "name": "Manuel Araoz",
-      "email": "manuelaraoz@gmail.com"
-    },
-    {
-      "name": "Matias Alejo Garcia",
-      "email": "ematiu@gmail.com"
-    },
-    {
-      "name": "Ryan X. Charles",
-      "email": "ryanxcharles@gmail.com"
-    },
-    {
-      "name": "Stefan Thomas",
-      "email": "moon@justmoon.net"
-    },
-    {
-      "name": "Stephen Pair",
-      "email": "stephen@bitpay.com"
-    },
-    {
-      "name": "Wei Lu",
-      "email": "luwei.here@gmail.com"
-    },
-    {
-      "name": "Michael Rodriguez",
-      "email": "michael@rodtec.org"
-    }
+    "Charlie Lee <coblee@sumcoin.org>",
+    "Daniel Cousens <bitcoin@dcousens.com>",
+    "Esteban Ordano <eordano@gmail.com>",
+    "Gordon Hall <gordon@bitpay.com>",
+    "Jeff Garzik <jgarzik@bitpay.com>",
+    "Kyle Drake <kyle@kyledrake.net>",
+    "Manuel Araoz <manuelaraoz@gmail.com>",
+    "Matias Alejo Garcia <ematiu@gmail.com>",
+    "Ryan X. Charles <ryanxcharles@gmail.com>",
+    "Stefan Thomas <moon@justmoon.net>",
+    "Stephen Pair <stephen@bitpay.com>",
+    "Wei Lu <luwei.here@gmail.com>",
+    "Michael Rodriguez <michael@rodtec.org>"
   ],
   "keywords": [
     "sumcoin",
@@ -83,7 +44,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sumcoinlabs/sumcore-lib.git"
+    "url": "git+https://github.com/sumcoinlabs/sumcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -101,8 +62,17 @@
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "sumcore-build": "sumcoinlabs/sumcore-build",
+    "sumcore-build": "github:sumcoinlabs/sumcore-build",
     "sinon": "^1.13.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sumcoinlabs/sumcore-lib/issues"
+  },
+  "homepage": "https://github.com/sumcoinlabs/sumcore-lib#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  }
 }
